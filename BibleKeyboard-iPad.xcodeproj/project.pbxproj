@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49B225F82226341800411FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B225F72226341800411FB6 /* AppDelegate.swift */; };
+		49B225FA2226341800411FB6 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B225F92226341800411FB6 /* AppViewController.swift */; };
+		49B225FD2226341800411FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B225FB2226341800411FB6 /* Main.storyboard */; };
+		49B225FF2226341900411FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B225FE2226341900411FB6 /* Assets.xcassets */; };
+		49B226022226341900411FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B226002226341900411FB6 /* LaunchScreen.storyboard */; };
+		49B2260D2226350800411FB6 /* BookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2260C2226350800411FB6 /* BookButton.swift */; };
+		49B2260F2226351B00411FB6 /* SectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2260E2226351B00411FB6 /* SectionLabel.swift */; };
+		49B226112226352D00411FB6 /* BibleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226102226352D00411FB6 /* BibleSection.swift */; };
+		49B226132226354300411FB6 /* VerseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226122226354300411FB6 /* VerseTextField.swift */; };
+		49B226152226357800411FB6 /* BibleKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226142226357800411FB6 /* BibleKeyboardView.swift */; };
+		49B22617222635B500411FB6 /* BibleKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B22616222635B500411FB6 /* BibleKeyboardView.xib */; };
+		7A6B24BCF24351289155788E /* Pods_BibleKeyboard_iPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5B5C1994135290CC4C35BD /* Pods_BibleKeyboard_iPad.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36699DEE114CD9D6F2342D11 /* Pods-BibleKeyboard-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleKeyboard-iPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BibleKeyboard-iPad/Pods-BibleKeyboard-iPad.debug.xcconfig"; sourceTree = "<group>"; };
+		49B225F42226341800411FB6 /* BibleKeyboard-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BibleKeyboard-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B225F72226341800411FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49B225F92226341800411FB6 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		49B225FC2226341800411FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49B225FE2226341900411FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49B226012226341900411FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49B226032226341900411FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B2260C2226350800411FB6 /* BookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookButton.swift; sourceTree = "<group>"; };
+		49B2260E2226351B00411FB6 /* SectionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLabel.swift; sourceTree = "<group>"; };
+		49B226102226352D00411FB6 /* BibleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleSection.swift; sourceTree = "<group>"; };
+		49B226122226354300411FB6 /* VerseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseTextField.swift; sourceTree = "<group>"; };
+		49B226142226357800411FB6 /* BibleKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleKeyboardView.swift; sourceTree = "<group>"; };
+		49B22616222635B500411FB6 /* BibleKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibleKeyboardView.xib; sourceTree = "<group>"; };
+		8D5B5C1994135290CC4C35BD /* Pods_BibleKeyboard_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleKeyboard_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92B663E2F078840409E65E5 /* Pods-BibleKeyboard-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleKeyboard-iPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-BibleKeyboard-iPad/Pods-BibleKeyboard-iPad.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49B225F12226341800411FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6B24BCF24351289155788E /* Pods_BibleKeyboard_iPad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13680780C2A7C7377218A07D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B5C1994135290CC4C35BD /* Pods_BibleKeyboard_iPad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49B225EB2226341800411FB6 = {
+			isa = PBXGroup;
+			children = (
+				49B225F62226341800411FB6 /* BibleKeyboard-iPad */,
+				49B225F52226341800411FB6 /* Products */,
+				68F0A7A4EF87166227350AEB /* Pods */,
+				13680780C2A7C7377218A07D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49B225F52226341800411FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B225F42226341800411FB6 /* BibleKeyboard-iPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B225F62226341800411FB6 /* BibleKeyboard-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				49B2260B2226344600411FB6 /* Model */,
+				49B2260A2226343B00411FB6 /* View */,
+				49B226092226343500411FB6 /* Controller */,
+				49B225FE2226341900411FB6 /* Assets.xcassets */,
+				49B226032226341900411FB6 /* Info.plist */,
+			);
+			path = "BibleKeyboard-iPad";
+			sourceTree = "<group>";
+		};
+		49B226092226343500411FB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49B225F72226341800411FB6 /* AppDelegate.swift */,
+				49B225F92226341800411FB6 /* AppViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49B2260A2226343B00411FB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49B226002226341900411FB6 /* LaunchScreen.storyboard */,
+				49B225FB2226341800411FB6 /* Main.storyboard */,
+				49B22616222635B500411FB6 /* BibleKeyboardView.xib */,
+				49B226142226357800411FB6 /* BibleKeyboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49B2260B2226344600411FB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49B2260C2226350800411FB6 /* BookButton.swift */,
+				49B2260E2226351B00411FB6 /* SectionLabel.swift */,
+				49B226102226352D00411FB6 /* BibleSection.swift */,
+				49B226122226354300411FB6 /* VerseTextField.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68F0A7A4EF87166227350AEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36699DEE114CD9D6F2342D11 /* Pods-BibleKeyboard-iPad.debug.xcconfig */,
+				F92B663E2F078840409E65E5 /* Pods-BibleKeyboard-iPad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49B225F32226341800411FB6 /* BibleKeyboard-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B226062226341900411FB6 /* Build configuration list for PBXNativeTarget "BibleKeyboard-iPad" */;
+			buildPhases = (
+				393BAB6E9FA8C7F83AEB611A /* [CP] Check Pods Manifest.lock */,
+				49B225F02226341800411FB6 /* Sources */,
+				49B225F12226341800411FB6 /* Frameworks */,
+				49B225F22226341800411FB6 /* Resources */,
+				6EE8FC786B482073DBF3851E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BibleKeyboard-iPad";
+			productName = "BibleKeyboard-iPad";
+			productReference = 49B225F42226341800411FB6 /* BibleKeyboard-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49B225EC2226341800411FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Amy Fang";
+				TargetAttributes = {
+					49B225F32226341800411FB6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 49B225EF2226341800411FB6 /* Build configuration list for PBXProject "BibleKeyboard-iPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49B225EB2226341800411FB6;
+			productRefGroup = 49B225F52226341800411FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49B225F32226341800411FB6 /* BibleKeyboard-iPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49B225F22226341800411FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B22617222635B500411FB6 /* BibleKeyboardView.xib in Resources */,
+				49B226022226341900411FB6 /* LaunchScreen.storyboard in Resources */,
+				49B225FF2226341900411FB6 /* Assets.xcassets in Resources */,
+				49B225FD2226341800411FB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		393BAB6E9FA8C7F83AEB611A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BibleKeyboard-iPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EE8FC786B482073DBF3851E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BibleKeyboard-iPad/Pods-BibleKeyboard-iPad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BibleKeyboard-iPad/Pods-BibleKeyboard-iPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49B225F02226341800411FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B225FA2226341800411FB6 /* AppViewController.swift in Sources */,
+				49B2260D2226350800411FB6 /* BookButton.swift in Sources */,
+				49B2260F2226351B00411FB6 /* SectionLabel.swift in Sources */,
+				49B226152226357800411FB6 /* BibleKeyboardView.swift in Sources */,
+				49B226112226352D00411FB6 /* BibleSection.swift in Sources */,
+				49B225F82226341800411FB6 /* AppDelegate.swift in Sources */,
+				49B226132226354300411FB6 /* VerseTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49B225FB2226341800411FB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49B225FC2226341800411FB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49B226002226341900411FB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49B226012226341900411FB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49B226042226341900411FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49B226052226341900411FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49B226072226341900411FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36699DEE114CD9D6F2342D11 /* Pods-BibleKeyboard-iPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DL4BZBG63V;
+				INFOPLIST_FILE = "BibleKeyboard-iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "amyfang.BibleKeyboard-iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49B226082226341900411FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92B663E2F078840409E65E5 /* Pods-BibleKeyboard-iPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DL4BZBG63V;
+				INFOPLIST_FILE = "BibleKeyboard-iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "amyfang.BibleKeyboard-iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49B225EF2226341800411FB6 /* Build configuration list for PBXProject "BibleKeyboard-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B226042226341900411FB6 /* Debug */,
+				49B226052226341900411FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B226062226341900411FB6 /* Build configuration list for PBXNativeTarget "BibleKeyboard-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B226072226341900411FB6 /* Debug */,
+				49B226082226341900411FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49B225EC2226341800411FB6 /* Project object */;
+}

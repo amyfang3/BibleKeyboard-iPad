@@ -1,0 +1,6 @@
+framework module Pods_BibleKeyboard_iPad {
+  umbrella header "Pods-BibleKeyboard-iPad-umbrella.h"
+
+  export *
+  module * { export * }
+}
