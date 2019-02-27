@@ -10,3 +10,11 @@ target 'BibleKeyboard-iPad' do
   pod 'SwiftyJSON'
 
 end
+
+target 'Keyboard' do
+    use_frameworks!
+    
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    
+end

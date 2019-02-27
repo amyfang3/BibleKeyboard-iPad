@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14771A49E35ADECD25D40AE36CE73F1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		1FC3FD39157C2FFFF3869A1300730086 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F6B9EA5D63A221428D82DFC754F83 /* SessionDelegate.swift */; };
 		36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003F0620667B1D1CE3A63A07911DA946 /* TaskDelegate.swift */; };
 		4E1A913EFB404FB11524718FF0298EFE /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FB4343C43368E1D119B6871123AF1 /* Alamofire.swift */; };
@@ -19,15 +20,17 @@
 		72456DB5155796E5BE0D1BA2FA8CE0C5 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A6BCB8BFA44757C42826D92DE90E92 /* SwiftyJSON-dummy.m */; };
 		77AEDABE4655CCA60CF80B1857106621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03809326666A0674F21BBADB1BB09D /* ParameterEncoding.swift */; };
-		7C7873C8DCC60D04F2D3B4651FD79873 /* Pods-BibleKeyboard-iPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E52576F15E5B5FE21BA5468CE45E35 /* Pods-BibleKeyboard-iPad-dummy.m */; };
+		7C7873C8DCC60D04F2D3B4651FD79873 /* Pods-BibleKeyboard-iPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8E070B7AC8CD9DD455F8F6C1D86958 /* Pods-BibleKeyboard-iPad-dummy.m */; };
 		8D1E66FE754A575BFFD9E0A4AD2E5ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEB670658597FB7864005ED913ECB6 /* Request.swift */; };
 		9D77DBDC9167F3EF3FE170C1F0FDF5C4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFF681209D4E5030FF4116EFD41362 /* SwiftyJSON.swift */; };
+		AB682D42AD88618C50F5FAD98CC9A306 /* Pods-Keyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F9B40D28E81A3A90DE6EAE6A1C0380 /* Pods-Keyboard-dummy.m */; };
 		B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D182500FF4918391F97385DAE996449 /* Timeline.swift */; };
 		B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7857033CB003F852F367D6BC6CA97425 /* NetworkReachabilityManager.swift */; };
 		BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6FA20699EAC0AB72A507BB66B191F8 /* AFError.swift */; };
+		BF2CBA28857A8CF0CD9871B8E1A2A92E /* Pods-Keyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C2BF6C5AF2C57416DA9F22BB0F6130 /* Pods-Keyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFEAA45779E1FE737EB77B5D71A8CD12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		D07D46F717105CCE8913024EE7F77F00 /* Pods-BibleKeyboard-iPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEC18EA27A8D7D9BE84FE6C240136F7 /* Pods-BibleKeyboard-iPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D07D46F717105CCE8913024EE7F77F00 /* Pods-BibleKeyboard-iPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 558520284B4C5C9558D9E39A850A12AD /* Pods-BibleKeyboard-iPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841CA7163214CF11939BFCB9E0C45F2 /* Alamofire-dummy.m */; };
 		DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5933A0580629CB79BDBD1D33483297F5 /* DispatchQueue+Alamofire.swift */; };
 		EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 901710181ECB814C322BEBBC0BC5182E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +40,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		903FC0EC2CED3BC2D53845CAFC29A868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
+			remoteInfo = Alamofire;
+		};
+		B8637E30107698957CE785909167C6C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213BBC380354F1D5F8EDFEE5BC02AE56;
+			remoteInfo = SwiftyJSON;
+		};
 		DD2512226EF8877C391CA8B29A9AE698 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -56,49 +73,59 @@
 /* Begin PBXFileReference section */
 		003F0620667B1D1CE3A63A07911DA946 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		0841CA7163214CF11939BFCB9E0C45F2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		086B55B2FDA9E035AD5B668CA7328843 /* Pods-BibleKeyboard-iPad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BibleKeyboard-iPad.modulemap"; sourceTree = "<group>"; };
 		09922B86810418CDE6DD69710D5A9C17 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		0C6E04C2B770D33E90A7E43AD9A6DDF5 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		1971DC42A52FEEE4D0DF8FA8CEBBFBB5 /* Pods-BibleKeyboard-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleKeyboard-iPad.debug.xcconfig"; sourceTree = "<group>"; };
+		11330369B7027E6F779D92AEBC74D48F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C2BF6C5AF2C57416DA9F22BB0F6130 /* Pods-Keyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Keyboard-umbrella.h"; sourceTree = "<group>"; };
+		266FB2C5E9BF2D7A57D801CF899A5807 /* Pods-BibleKeyboard-iPad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BibleKeyboard-iPad.modulemap"; sourceTree = "<group>"; };
 		26EFF0A773A9B68F8036680922E55A8F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		2D182500FF4918391F97385DAE996449 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		332F6B9EA5D63A221428D82DFC754F83 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		35994182E748FA7FF4F4F4BA0B4A9EDA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40940641FEC544E01CEA2CF3E3D8CEA5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		42AC62C33335B5674967E25B64BDC68E /* Pods-BibleKeyboard-iPad-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BibleKeyboard-iPad-frameworks.sh"; sourceTree = "<group>"; };
 		47A6BCB8BFA44757C42826D92DE90E92 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		49D98E1CB64603FE89CD4BB486D8C4D8 /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7DC1E21DB2CFEB43E506E64D5B61D6 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		533B2AF3A81710C32DEBED81D482F638 /* Pods-Keyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Keyboard.modulemap"; sourceTree = "<group>"; };
 		557AFBCC38FD01234CE7EEAFFFF83850 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		558520284B4C5C9558D9E39A850A12AD /* Pods-BibleKeyboard-iPad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BibleKeyboard-iPad-umbrella.h"; sourceTree = "<group>"; };
 		562CF504AEEDF6009597F045CAB1719E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		5710B8B31B2C0CFB43CF9DAFA02332CA /* Pods-BibleKeyboard-iPad-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BibleKeyboard-iPad-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5933A0580629CB79BDBD1D33483297F5 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		6FEC18EA27A8D7D9BE84FE6C240136F7 /* Pods-BibleKeyboard-iPad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BibleKeyboard-iPad-umbrella.h"; sourceTree = "<group>"; };
-		71E52576F15E5B5FE21BA5468CE45E35 /* Pods-BibleKeyboard-iPad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BibleKeyboard-iPad-dummy.m"; sourceTree = "<group>"; };
 		73700E13B07592982F396FCAF905FBA6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7648E76A4BBC3D090B0A03826AB6A6AB /* Pods-BibleKeyboard-iPad-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BibleKeyboard-iPad-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7857033CB003F852F367D6BC6CA97425 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		797FAF2BAF0B6259E9FBE5AB6D46A5A8 /* Pods-BibleKeyboard-iPad-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BibleKeyboard-iPad-frameworks.sh"; sourceTree = "<group>"; };
+		81030FF4A96A7DC843FEAF93A09937FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816537A57D0662D80486E6CE09CBDF4F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		84129AB0F88730BC2D8893A2F1D8A178 /* Pods-BibleKeyboard-iPad-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BibleKeyboard-iPad-resources.sh"; sourceTree = "<group>"; };
+		83855EBD1FAE5B2B56E44D96C132DA46 /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		8857C3AD54934BBE2B0398ACCF5FF30B /* Pods-BibleKeyboard-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleKeyboard-iPad.debug.xcconfig"; sourceTree = "<group>"; };
+		8D949D7C8E85F882ACD6C2855FC01CF4 /* Pods-BibleKeyboard-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleKeyboard-iPad.release.xcconfig"; sourceTree = "<group>"; };
 		8F03809326666A0674F21BBADB1BB09D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		901710181ECB814C322BEBBC0BC5182E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		905AE34069B3640371DA5B5EED3DB8EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99CC035CA52EEE42708C76FA153255E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F2E89C079BA8734265916EA2C8473FA /* Pods-BibleKeyboard-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BibleKeyboard-iPad.release.xcconfig"; sourceTree = "<group>"; };
-		A3DF30E790FF3DADBD5BDDEBF115BE3B /* Pods_BibleKeyboard_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BibleKeyboard_iPad.framework; path = "Pods-BibleKeyboard-iPad.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9492A602887F82C9229C0FCDA53F5B20 /* Pods-BibleKeyboard-iPad-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BibleKeyboard-iPad-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C8E070B7AC8CD9DD455F8F6C1D86958 /* Pods-BibleKeyboard-iPad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BibleKeyboard-iPad-dummy.m"; sourceTree = "<group>"; };
+		A00889BAF9E59A7A16819625D57A4A6A /* Pods_BibleKeyboard_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BibleKeyboard_iPad.framework; path = "Pods-BibleKeyboard-iPad.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAACF1F44D2D12F875047DF2857EDD7A /* Pods-Keyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Keyboard-resources.sh"; sourceTree = "<group>"; };
 		AEBEB670658597FB7864005ED913ECB6 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		B80D41A40824291C47AA9A6A032B3759 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEEAC1098D266B00AB7801309FEEB2A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE916262DA3B758CAD082788099FDE78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF6FA20699EAC0AB72A507BB66B191F8 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		CFBFF681209D4E5030FF4116EFD41362 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		D0C8C158BCA9E7176406337B7B4B35D8 /* Pods-BibleKeyboard-iPad-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BibleKeyboard-iPad-acknowledgements.plist"; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D9EE6D52AA2F0C3238B527C58255F520 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		DAA5CA9C1A1A8A10FA0F34E068E281AB /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		DDEA980565367A10DF96F68AEACDA26F /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Keyboard.framework; path = "Pods-Keyboard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F9B40D28E81A3A90DE6EAE6A1C0380 /* Pods-Keyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Keyboard-dummy.m"; sourceTree = "<group>"; };
 		E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		E42F49FBA20BC96954B56110A1FB0535 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		E75E77182B531BE25FF735607E40A3E1 /* Pods-Keyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Keyboard-acknowledgements.plist"; sourceTree = "<group>"; };
 		F05B506A540FE042146EA8265DD35585 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		F26FB4343C43368E1D119B6871123AF1 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		F382C5721F36A8CF08DA36032E8FF2C1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		F555A65B825693486EE6115C3BE0C682 /* Pods-Keyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Keyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8D46EC089AFC404BA7C2453E804D33A /* Pods-BibleKeyboard-iPad-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BibleKeyboard-iPad-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +145,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC0D10FECB75E644C9913CD07E07A0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14771A49E35ADECD25D40AE36CE73F1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D96EE194701E7A622CE6190B743873A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,12 +164,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A7D345BB4B25A40B4B2CE3AFD0ACDE4 /* Products */ = {
+		40E2C0CBE6AF5DFAB37EB7E3CC6DADFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B80D41A40824291C47AA9A6A032B3759 /* Alamofire.framework */,
-				A3DF30E790FF3DADBD5BDDEBF115BE3B /* Pods_BibleKeyboard_iPad.framework */,
-				35994182E748FA7FF4F4F4BA0B4A9EDA /* SwiftyJSON.framework */,
+				11330369B7027E6F779D92AEBC74D48F /* Alamofire.framework */,
+				A00889BAF9E59A7A16819625D57A4A6A /* Pods_BibleKeyboard_iPad.framework */,
+				DDEA980565367A10DF96F68AEACDA26F /* Pods_Keyboard.framework */,
+				CCEEAC1098D266B00AB7801309FEEB2A /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,27 +197,45 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		77CA41A281893CDFAE4AED7D58F1312D /* Targets Support Files */ = {
+		59CD4E672356432AD1F50BDEB5884C84 /* Pods-Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				791C5C5702A95477DDACF0F68E9C43E7 /* Pods-BibleKeyboard-iPad */,
+				81030FF4A96A7DC843FEAF93A09937FB /* Info.plist */,
+				533B2AF3A81710C32DEBED81D482F638 /* Pods-Keyboard.modulemap */,
+				F555A65B825693486EE6115C3BE0C682 /* Pods-Keyboard-acknowledgements.markdown */,
+				E75E77182B531BE25FF735607E40A3E1 /* Pods-Keyboard-acknowledgements.plist */,
+				E0F9B40D28E81A3A90DE6EAE6A1C0380 /* Pods-Keyboard-dummy.m */,
+				AAACF1F44D2D12F875047DF2857EDD7A /* Pods-Keyboard-resources.sh */,
+				12C2BF6C5AF2C57416DA9F22BB0F6130 /* Pods-Keyboard-umbrella.h */,
+				49D98E1CB64603FE89CD4BB486D8C4D8 /* Pods-Keyboard.debug.xcconfig */,
+				83855EBD1FAE5B2B56E44D96C132DA46 /* Pods-Keyboard.release.xcconfig */,
+			);
+			name = "Pods-Keyboard";
+			path = "Target Support Files/Pods-Keyboard";
+			sourceTree = "<group>";
+		};
+		5E597EF87C1064D9C5CE29FB38330811 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6842EDDE43F9C55428817F07A7BA0EBE /* Pods-BibleKeyboard-iPad */,
+				59CD4E672356432AD1F50BDEB5884C84 /* Pods-Keyboard */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		791C5C5702A95477DDACF0F68E9C43E7 /* Pods-BibleKeyboard-iPad */ = {
+		6842EDDE43F9C55428817F07A7BA0EBE /* Pods-BibleKeyboard-iPad */ = {
 			isa = PBXGroup;
 			children = (
-				99CC035CA52EEE42708C76FA153255E1 /* Info.plist */,
-				086B55B2FDA9E035AD5B668CA7328843 /* Pods-BibleKeyboard-iPad.modulemap */,
-				7648E76A4BBC3D090B0A03826AB6A6AB /* Pods-BibleKeyboard-iPad-acknowledgements.markdown */,
-				D0C8C158BCA9E7176406337B7B4B35D8 /* Pods-BibleKeyboard-iPad-acknowledgements.plist */,
-				71E52576F15E5B5FE21BA5468CE45E35 /* Pods-BibleKeyboard-iPad-dummy.m */,
-				797FAF2BAF0B6259E9FBE5AB6D46A5A8 /* Pods-BibleKeyboard-iPad-frameworks.sh */,
-				84129AB0F88730BC2D8893A2F1D8A178 /* Pods-BibleKeyboard-iPad-resources.sh */,
-				6FEC18EA27A8D7D9BE84FE6C240136F7 /* Pods-BibleKeyboard-iPad-umbrella.h */,
-				1971DC42A52FEEE4D0DF8FA8CEBBFBB5 /* Pods-BibleKeyboard-iPad.debug.xcconfig */,
-				9F2E89C079BA8734265916EA2C8473FA /* Pods-BibleKeyboard-iPad.release.xcconfig */,
+				905AE34069B3640371DA5B5EED3DB8EE /* Info.plist */,
+				266FB2C5E9BF2D7A57D801CF899A5807 /* Pods-BibleKeyboard-iPad.modulemap */,
+				5710B8B31B2C0CFB43CF9DAFA02332CA /* Pods-BibleKeyboard-iPad-acknowledgements.markdown */,
+				9492A602887F82C9229C0FCDA53F5B20 /* Pods-BibleKeyboard-iPad-acknowledgements.plist */,
+				9C8E070B7AC8CD9DD455F8F6C1D86958 /* Pods-BibleKeyboard-iPad-dummy.m */,
+				42AC62C33335B5674967E25B64BDC68E /* Pods-BibleKeyboard-iPad-frameworks.sh */,
+				F8D46EC089AFC404BA7C2453E804D33A /* Pods-BibleKeyboard-iPad-resources.sh */,
+				558520284B4C5C9558D9E39A850A12AD /* Pods-BibleKeyboard-iPad-umbrella.h */,
+				8857C3AD54934BBE2B0398ACCF5FF30B /* Pods-BibleKeyboard-iPad.debug.xcconfig */,
+				8D949D7C8E85F882ACD6C2855FC01CF4 /* Pods-BibleKeyboard-iPad.release.xcconfig */,
 			);
 			name = "Pods-BibleKeyboard-iPad";
 			path = "Target Support Files/Pods-BibleKeyboard-iPad";
@@ -193,8 +247,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				86D8AA6B1E9A5BBF1AE91BD6451D7A84 /* Pods */,
-				0A7D345BB4B25A40B4B2CE3AFD0ACDE4 /* Products */,
-				77CA41A281893CDFAE4AED7D58F1312D /* Targets Support Files */,
+				40E2C0CBE6AF5DFAB37EB7E3CC6DADFF /* Products */,
+				5E597EF87C1064D9C5CE29FB38330811 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,6 +346,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACCE7775D0713AC8D9666E02D5F976C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2CBA28857A8CF0CD9871B8E1A2A92E /* Pods-Keyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -310,7 +372,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 35994182E748FA7FF4F4F4BA0B4A9EDA /* SwiftyJSON.framework */;
+			productReference = CCEEAC1098D266B00AB7801309FEEB2A /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7F0AA6E37487B429EC46488806A08260 /* Pods-BibleKeyboard-iPad */ = {
@@ -330,7 +392,27 @@
 			);
 			name = "Pods-BibleKeyboard-iPad";
 			productName = "Pods-BibleKeyboard-iPad";
-			productReference = A3DF30E790FF3DADBD5BDDEBF115BE3B /* Pods_BibleKeyboard_iPad.framework */;
+			productReference = A00889BAF9E59A7A16819625D57A4A6A /* Pods_BibleKeyboard_iPad.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE77B2A6FC814530731690DE496571B0 /* Pods-Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81DB69EA7E8C764C034A7FF32395189E /* Build configuration list for PBXNativeTarget "Pods-Keyboard" */;
+			buildPhases = (
+				ACCE7775D0713AC8D9666E02D5F976C4 /* Headers */,
+				01EEA8471CE8FD85DAB135D624EF0711 /* Sources */,
+				AC0D10FECB75E644C9913CD07E07A0ED /* Frameworks */,
+				7A31A0769340B201DB4F7BC721142F74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				987F243A9391EF19F689EEBC3D059AC0 /* PBXTargetDependency */,
+				053BE4C74BC9172DC697B16E0A0DDE2F /* PBXTargetDependency */,
+			);
+			name = "Pods-Keyboard";
+			productName = "Pods-Keyboard";
+			productReference = DDEA980565367A10DF96F68AEACDA26F /* Pods_Keyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E76458C58C9140B6A16D60547E68E80C /* Alamofire */ = {
@@ -348,7 +430,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = B80D41A40824291C47AA9A6A032B3759 /* Alamofire.framework */;
+			productReference = 11330369B7027E6F779D92AEBC74D48F /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -368,12 +450,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0A7D345BB4B25A40B4B2CE3AFD0ACDE4 /* Products */;
+			productRefGroup = 40E2C0CBE6AF5DFAB37EB7E3CC6DADFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E76458C58C9140B6A16D60547E68E80C /* Alamofire */,
 				7F0AA6E37487B429EC46488806A08260 /* Pods-BibleKeyboard-iPad */,
+				AE77B2A6FC814530731690DE496571B0 /* Pods-Keyboard */,
 				213BBC380354F1D5F8EDFEE5BC02AE56 /* SwiftyJSON */,
 			);
 		};
@@ -394,6 +477,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A31A0769340B201DB4F7BC721142F74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7D3038457BB08662CC11743697C2752 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +494,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01EEA8471CE8FD85DAB135D624EF0711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB682D42AD88618C50F5FAD98CC9A306 /* Pods-Keyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87CA8368FB77C4D57D96A8B8BDF7876E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +547,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		053BE4C74BC9172DC697B16E0A0DDE2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 213BBC380354F1D5F8EDFEE5BC02AE56 /* SwiftyJSON */;
+			targetProxy = B8637E30107698957CE785909167C6C2 /* PBXContainerItemProxy */;
+		};
 		1EA1D0189D44890C2A7011D78F41A287 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -460,6 +564,12 @@
 			name = SwiftyJSON;
 			target = 213BBC380354F1D5F8EDFEE5BC02AE56 /* SwiftyJSON */;
 			targetProxy = DD2512226EF8877C391CA8B29A9AE698 /* PBXContainerItemProxy */;
+		};
+		987F243A9391EF19F689EEBC3D059AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
+			targetProxy = 903FC0EC2CED3BC2D53845CAFC29A868 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -530,10 +640,11 @@
 			};
 			name = Debug;
 		};
-		1EAFDB7DE59A16060DF36FC40DC2E750 /* Release */ = {
+		0D23CB221B7F957C873270ED3AFBACBD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -543,8 +654,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,9 +663,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -568,7 +679,7 @@
 		};
 		2B1EB6511FBA9B10926C443EEE9FD9B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1971DC42A52FEEE4D0DF8FA8CEBBFBB5 /* Pods-BibleKeyboard-iPad.debug.xcconfig */;
+			baseConfigurationReference = 8857C3AD54934BBE2B0398ACCF5FF30B /* Pods-BibleKeyboard-iPad.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -604,10 +715,13 @@
 			};
 			name = Debug;
 		};
-		7E404DC5CA1E9B169C296EAB6E36C24A /* Debug */ = {
+		4E62F78383011FE09B4B98496ABBD7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 49D98E1CB64603FE89CD4BB486D8C4D8 /* Pods-Keyboard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -617,8 +731,45 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Keyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Keyboard/Pods-Keyboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F503D79549C9BBE9E2964E82363FEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -626,18 +777,19 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8000995DA02063BF3777393CD52061DD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -701,10 +853,11 @@
 			};
 			name = Release;
 		};
-		C317EC7856F61518937E439D8BA70047 /* Release */ = {
+		871372E19C8CFBC7E4D816C3378487FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EC9F2B17E3F31671529D092B9450376 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -731,6 +884,81 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91F8E00C78E3227FD41D8FDE089C4DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0A126DAEA775BC0A7DBC321040FAF10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83855EBD1FAE5B2B56E44D96C132DA46 /* Pods-Keyboard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Keyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Keyboard/Pods-Keyboard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -739,7 +967,7 @@
 		};
 		CECC56B77E3B7EBDDAF2C5319E1D64E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F2E89C079BA8734265916EA2C8473FA /* Pods-BibleKeyboard-iPad.release.xcconfig */;
+			baseConfigurationReference = 8D949D7C8E85F882ACD6C2855FC01CF4 /* Pods-BibleKeyboard-iPad.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -776,49 +1004,14 @@
 			};
 			name = Release;
 		};
-		F9711F223F590669E94B504F3CC44301 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1456F70DDC38E5610289D309053CAC2 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		19822472CA5B1D6C7E78A13E76017888 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E404DC5CA1E9B169C296EAB6E36C24A /* Debug */,
-				C317EC7856F61518937E439D8BA70047 /* Release */,
+				871372E19C8CFBC7E4D816C3378487FF /* Debug */,
+				0D23CB221B7F957C873270ED3AFBACBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -835,8 +1028,17 @@
 		427F0F003A1AD80AE00155AFCDEFAC20 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9711F223F590669E94B504F3CC44301 /* Debug */,
-				1EAFDB7DE59A16060DF36FC40DC2E750 /* Release */,
+				91F8E00C78E3227FD41D8FDE089C4DF4 /* Debug */,
+				6F503D79549C9BBE9E2964E82363FEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81DB69EA7E8C764C034A7FF32395189E /* Build configuration list for PBXNativeTarget "Pods-Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E62F78383011FE09B4B98496ABBD7B5 /* Debug */,
+				A0A126DAEA775BC0A7DBC321040FAF10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
