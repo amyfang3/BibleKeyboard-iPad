@@ -24,13 +24,11 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     var scrollView: UIScrollView!
     
     @IBOutlet weak var bookLabel: UILabel!
-    @IBOutlet weak var startCh: VerseTextField!
-    @IBOutlet weak var startVerse: VerseTextField!
-    @IBOutlet weak var endCh: VerseTextField!
-    @IBOutlet weak var endVerse: VerseTextField!
     
-//    @IBOutlet weak var nextKeyboardButton: UIButton!
-//    @IBOutlet weak var verseNumsIncludedButton: UISwitch!
+    @IBOutlet weak var verseReference: VerseTextField!
+    
+    @IBOutlet weak var nextKeyboardBtn: UIButton!
+    @IBOutlet weak var verseNumsIncludedBtn: UISwitch!
     
     var activeField: UITextField?
     
@@ -42,19 +40,16 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
         super.awakeFromNib()
         addScrollView()
         populateBooks()
-        startCh.delegate = self
-        startCh.inputView = self
-        startVerse.delegate = self
-        startVerse.inputView = self
-        endCh.delegate = self
-        endCh.inputView = self
-        endVerse.delegate = self
-        endVerse.inputView = self
+        
+        verseNumsIncludedBtn.onTintColor = UIColor.init(red: 192/255, green: 179/255, blue: 149/255, alpha: 1.0)
+        
+        verseReference.delegate = self
+        verseReference.inputView = self
     }
     
-//    func setNextKeyboardVisible(_ visible: Bool){
-//        nextKeyboardButton.isHidden = !visible
-//    }
+    func setNextKeyboardVisible(_ visible: Bool){
+        nextKeyboardBtn.isHidden = !visible
+    }
     
     // MARK: - Book Tab Methods
     // adds scrollview which holds the books
@@ -130,22 +125,13 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
         // if a text field is selected and # of chars is < 3, add a new character
         if let fieldCount = activeField?.text?.count {
             
-            // Prevent users from inputting 0 as first char
-            if fieldCount == 0 && sender.titleLabel?.text! == "0" {
-                print("Don't input if user tries to input first character as 0")
-            }
-                
-                // add character if # of chars is < 3
-            else if fieldCount < 3 {
+            // Prevent users from inputting 0, -, or : as first char
+            if fieldCount == 0 && (sender.titleLabel?.text! == "0" ||
+                                   sender.titleLabel?.text! == "-" ||
+                                    sender.titleLabel?.text! == ":") {
+                print("Don't input if user tries to input first character as 0, -, :")
+            } else {
                 activeField?.text = (activeField?.text)! + (sender.titleLabel?.text!)!
-                
-                // make end verse placeholders reflect the start verses
-                if activeField == startCh {
-                    endCh.placeholder = startCh.text
-                }
-                if activeField == startVerse {
-                    endVerse.placeholder = startVerse.text
-                }
             }
         }
     }
@@ -165,122 +151,21 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     }
     
     @IBAction func submitBtnTapped(_ sender: UIButton) {
-        var isUserInputValid = true
-        var passageReference = ""
-
-        checkIfTextFieldIsNil(textField: startCh)
-
-//        if !endCh.text.isNilOrEmpty {
-//            checkIfEndChIsLessThanStartCh()
-//        }
-//
-//        if !endVerse.text.isNilOrEmpty {
-//            checkIfTextFieldIsNil(textField: startVerse)
-//            checkIfEndVerseIsLessThanStartVerse()
-//        }
-
-
-        // startCh, startVerse, endCh, endVerse
-        if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty && !startVerse.text.isNilOrEmpty && !endCh.text.isNilOrEmpty && !endVerse.text.isNilOrEmpty {
-            print("Input scenario: startCh, startVerse, endCh, endVerse")
-            passageReference = "\(bookLabel.text!) \(startCh.text!):\(startVerse.text!)-\(endCh.text!):\(endVerse.text!)"
-        }
-
-        // startCh, startVerse, and endCh
-        else if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty && !startVerse.text.isNilOrEmpty && !endCh.text.isNilOrEmpty {
-            print("Input scenario: startCh, startVerse, endCh")
-            passageReference = "\(bookLabel.text!) \(startCh.text!):\(startVerse.text!)-\(endCh.text!)"
-        }
-
-        // startCh, startVerse, and endVerse
-        else if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty && !startVerse.text.isNilOrEmpty && !endVerse.text.isNilOrEmpty {
-            print("Input scenario: startCh, startVerse, endVerse")
-            passageReference = "\(bookLabel.text!) \(startCh.text!):\(startVerse.text!)-\(endVerse.text!)"
-        }
-
-        // startCh, endCh, endVerse
-        else if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty && !endCh.text.isNilOrEmpty && !endVerse.text.isNilOrEmpty {
-            print("Input scenario: startCh, endCh, endVerse")
-            passageReference = "\(bookLabel.text!) \(startCh.text!)-\(endCh.text!):\(endVerse.text!)"
-        }
-        // startCh and endCh
-        else if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty && !endCh.text.isNilOrEmpty {
-            print("Input scenario: startCh, endCh")
-            passageReference = "\(bookLabel.text!) \(startCh.text!)-\(endCh.text!)"
-        }
-
-        // startCh and startVerse
-        else if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty && !startVerse.text.isNilOrEmpty {
-            print("Input scenario: startCh, startVerse")
-            passageReference = "\(bookLabel.text!) \(startCh.text!):\(startVerse.text!)"
-        }
-
-        // startCh only
-        else if (bookLabel.text?.isBookSelected)! && !startCh.text.isNilOrEmpty {
-            print("Input scenario: startCh")
-            passageReference = "\(bookLabel.text!) \(startCh.text!)"
-        }
-
-        // Invalid user input
-        else {
-            print("Error")
-            isUserInputValid = false
-        }
-
-        if isUserInputValid == true {
-            getBiblePassage(passageReference: passageReference){ passage, error in
-                self.delegate?.submitButtonWasTapped(passage: passage!)
-            }
+        
+        let passageReference = bookLabel.text! + verseReference.text!
+        print("Passage reference: \(passageReference)")
+        print(verseNumsIncludedBtn.isOn)
+        
+        getBiblePassage(passageReference: passageReference){ passage, error in
+            self.delegate?.submitButtonWasTapped(passage: passage!)
         }
     }
-    
-    // MARK: - Input Validation Methods
-    func checkIfTextFieldIsNil(textField: VerseTextField) {
-        if textField.text.isNilOrEmpty {
-            textField.changeToErrorUI()
-        } else {
-            textField.changeToNormalUI()
-        }
-    }
-    
-    func checkIfEndChIsLessThanStartCh(){
-        if !startCh.text.isNilOrEmpty {
-            if let endChapterText = endCh.text {
-                let endChapterNum = Int(endChapterText)
-                let startChapterNum = Int(startCh.text!)
-                
-                if  endChapterNum! < startChapterNum! {
-                    startCh.changeToErrorUI()
-                    endCh.changeToErrorUI()
-                } else {
-                    startCh.changeToNormalUI()
-                    endCh.changeToNormalUI()
-                }
-            }
-        }
-    }
-    
-    func checkIfEndVerseIsLessThanStartVerse(){
-        if !startVerse.text.isNilOrEmpty && !endVerse.text.isNilOrEmpty {
-            let startVerseNum = Int(startVerse.text!)
-            let endVerseNum = Int(endVerse.text!)
-            
-            if endVerseNum! < startVerseNum! {
-                startVerse.changeToErrorUI()
-                endVerse.changeToErrorUI()
-            } else {
-                startVerse.changeToNormalUI()
-                endVerse.changeToNormalUI()
-            }
-        }
-    }
-    
     
     // MARK: - JSON Parsing Method
     func getBiblePassage(passageReference: String, completionHandler: @escaping (String?, Error?) -> ()) {
         let parameters:[String:Any] = ["q": passageReference,
                                        "include-passage-references": "true",
-                                       "include-first-verse-numbers": "false",
+                                       "include-verse-numbers": String(verseNumsIncludedBtn.isOn),
                                        "include-footnotes": "false",
                                        "include-headings": "false"]
         
@@ -311,7 +196,6 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
 // MARK: - Extensions
 extension BibleKeyboardView: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("I'm in textFieldDidBeginEditing")
         activeField = textField
     }
 }
@@ -323,8 +207,6 @@ extension Optional where Wrapped == String {
         }
         return strongSelf.isEmpty ? true : false
     }
-    
-    
 }
 
 extension String {

@@ -33,13 +33,13 @@ class KeyboardViewController: UIInputViewController {
             ])
         
         // controls visibility of the globe key
-        //bibleKeyboardView.setNextKeyboardVisible(needsInputModeSwitchKey)
+        bibleKeyboardView.setNextKeyboardVisible(needsInputModeSwitchKey)
         
         // adds automatic handle switching to glove key
-//        //bibleKeyboardView.nextKeyboardButton.addTarget(self,
-//                                                       action: #selector(handleInputModeList(from:with:)),
-//                                                       for: .allTouchEvents)
-//
+        bibleKeyboardView.nextKeyboardBtn.addTarget(self,
+                                                       action: #selector(handleInputModeList(from:with:)),
+                                                       for: .allTouchEvents)
+
         bibleKeyboardView.delegate = self
     }
 }
