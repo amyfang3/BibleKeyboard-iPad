@@ -220,18 +220,18 @@
                         <action selector="numBtnTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="U4K-p9-7bT"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-uU-GDi">
-                    <rect key="frame" x="718" y="15" width="199" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ch." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ny1-gU-Rao">
-                    <rect key="frame" x="670" y="19" width="40" height="21"/>
+                    <rect key="frame" x="599" y="20" width="40" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-Aj-x5A">
+                    <rect key="frame" x="685" y="20" width="214" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -242,7 +242,7 @@
                 <outlet property="bookLabel" destination="iN3-t0-rfP" id="3ZM-69-skD"/>
                 <outlet property="nextKeyboardBtn" destination="wqo-D9-i1d" id="8RV-5u-WsO"/>
                 <outlet property="verseNumsIncludedBtn" destination="PWR-vp-Dcl" id="hmS-tg-SBl"/>
-                <outlet property="verseReferenceTxtField" destination="Bte-uU-GDi" id="JKS-Wf-qXR"/>
+                <outlet property="verseReferenceLabel" destination="6b3-Aj-x5A" id="dtW-OO-Yf3"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
         </view>

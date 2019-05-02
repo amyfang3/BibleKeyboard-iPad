@@ -24,13 +24,10 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     var scrollView: UIScrollView!
     
     @IBOutlet weak var bookLabel: UILabel!
-    
-    @IBOutlet weak var verseReferenceTxtField: VerseTextField!
+    @IBOutlet weak var verseReferenceLabel: UILabel!
     
     @IBOutlet weak var nextKeyboardBtn: UIButton!
     @IBOutlet weak var verseNumsIncludedBtn: UISwitch!
-    
-    var activeField: UITextField?
     
     let oldTestament = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy", "Joshua", "Judges", "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles", "Ezra", "Nehemiah", "Esther", "Job", "Psalms", "Proverbs", "Ecclesiastes", "Song of Solomon", "Isaiah", "Jeremiah", "Lamentations", "Ezekiel", "Daniel", "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi"]
     
@@ -42,9 +39,6 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
         populateBooks()
         
         verseNumsIncludedBtn.onTintColor = UIColor.init(red: 192/255, green: 179/255, blue: 149/255, alpha: 1.0)
-        
-        verseReferenceTxtField.delegate = self
-        verseReferenceTxtField.inputView = self
     }
     
     func setNextKeyboardVisible(_ visible: Bool){
@@ -122,8 +116,9 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     
     // adds numbers to text fields
     @IBAction func numBtnTapped(_ sender: UIButton) {
+        
         // if a text field is selected and # of chars is < 3, add a new character
-        if let fieldCount = activeField?.text?.count {
+        if let fieldCount = verseReferenceLabel.text?.count {
             
             // Prevent users from inputting 0, -, or : as first char
             if fieldCount == 0 && (sender.titleLabel?.text! == "0" ||
@@ -131,18 +126,15 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
                                     sender.titleLabel?.text! == ":") {
                 print("Don't input if user tries to input first character as 0, -, :")
             } else {
-                activeField?.text = (activeField?.text)! + (sender.titleLabel?.text!)!
+                verseReferenceLabel.text = (verseReferenceLabel.text)! + (sender.titleLabel?.text!)!
             }
         }
     }
     
     @IBAction func deleteBtnTapped(_ sender: Any) {
-
         // if a text field is selected and has at least 1 char, delete last char
-        if let textField = activeField {
-            if (textField.text?.count)! > 0 {
-                textField.text?.removeLast()
-            }
+        if (verseReferenceLabel.text?.count)! > 0 {
+            verseReferenceLabel.text?.removeLast()
         }
     }
     
@@ -151,13 +143,21 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     }
     
     @IBAction func submitBtnTapped(_ sender: UIButton) {
-        
-        let passageReference = bookLabel.text! + verseReferenceTxtField.text!
+    
+        let passageReference = bookLabel.text! + " " + verseReferenceLabel.text!
         print("Passage reference: \(passageReference)")
         print(verseNumsIncludedBtn.isOn)
         
         getBiblePassage(passageReference: passageReference){ passage, error in
-            self.delegate?.submitButtonWasTapped(passage: passage!)
+            
+            if let passage = passage {
+                self.delegate?.submitButtonWasTapped(passage: passage)
+            }
+            else {
+                let errorMessage = "Error, didn't get Bible data"
+                self.delegate?.submitButtonWasTapped(passage: errorMessage)
+            }
+            
         }
     }
     
@@ -190,13 +190,6 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
                 completionHandler(nil, error)
             }
         }
-    }
-}
-
-// MARK: - Extensions
-extension BibleKeyboardView: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        activeField = textField
     }
 }
 
