@@ -25,7 +25,7 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     
     @IBOutlet weak var bookLabel: UILabel!
     
-    @IBOutlet weak var verseReference: VerseTextField!
+    @IBOutlet weak var verseReferenceTxtField: VerseTextField!
     
     @IBOutlet weak var nextKeyboardBtn: UIButton!
     @IBOutlet weak var verseNumsIncludedBtn: UISwitch!
@@ -43,8 +43,8 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
         
         verseNumsIncludedBtn.onTintColor = UIColor.init(red: 192/255, green: 179/255, blue: 149/255, alpha: 1.0)
         
-        verseReference.delegate = self
-        verseReference.inputView = self
+        verseReferenceTxtField.delegate = self
+        verseReferenceTxtField.inputView = self
     }
     
     func setNextKeyboardVisible(_ visible: Bool){
@@ -152,7 +152,7 @@ class BibleKeyboardView: UIView, UIScrollViewDelegate {
     
     @IBAction func submitBtnTapped(_ sender: UIButton) {
         
-        let passageReference = bookLabel.text! + verseReference.text!
+        let passageReference = bookLabel.text! + verseReferenceTxtField.text!
         print("Passage reference: \(passageReference)")
         print(verseNumsIncludedBtn.isOn)
         
