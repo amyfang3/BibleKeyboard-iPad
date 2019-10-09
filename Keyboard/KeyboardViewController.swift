@@ -52,4 +52,8 @@ extension KeyboardViewController: BibleVerseKeyboardViewDelegate {
     func newlineButtonWasTapped() {
         textDocumentProxy.insertText("\n")
     }
+    
+    func globeKeyButtonWasTapped() {
+        // self.advanceToNextInputMode()
+    }
 }

@@ -15,13 +15,11 @@
 		49B2260D2226350800411FB6 /* BookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2260C2226350800411FB6 /* BookButton.swift */; };
 		49B2260F2226351B00411FB6 /* SectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2260E2226351B00411FB6 /* SectionLabel.swift */; };
 		49B226112226352D00411FB6 /* BibleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226102226352D00411FB6 /* BibleSection.swift */; };
-		49B226132226354300411FB6 /* VerseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226122226354300411FB6 /* VerseTextField.swift */; };
 		49B226152226357800411FB6 /* BibleKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226142226357800411FB6 /* BibleKeyboardView.swift */; };
 		49B22617222635B500411FB6 /* BibleKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B22616222635B500411FB6 /* BibleKeyboardView.xib */; };
 		49B2261F2226525600411FB6 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2261E2226525600411FB6 /* KeyboardViewController.swift */; };
 		49B226232226525600411FB6 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49B2261C2226525600411FB6 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49B226292226562700411FB6 /* BibleKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226142226357800411FB6 /* BibleKeyboardView.swift */; };
-		49B2262A2226590D00411FB6 /* VerseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226122226354300411FB6 /* VerseTextField.swift */; };
 		49B2262B2226591100411FB6 /* BibleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B226102226352D00411FB6 /* BibleSection.swift */; };
 		49B2262C2226591300411FB6 /* SectionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2260E2226351B00411FB6 /* SectionLabel.swift */; };
 		49B2262D2226591500411FB6 /* BookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2260C2226350800411FB6 /* BookButton.swift */; };
@@ -69,7 +67,6 @@
 		49B2260C2226350800411FB6 /* BookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookButton.swift; sourceTree = "<group>"; };
 		49B2260E2226351B00411FB6 /* SectionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionLabel.swift; sourceTree = "<group>"; };
 		49B226102226352D00411FB6 /* BibleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleSection.swift; sourceTree = "<group>"; };
-		49B226122226354300411FB6 /* VerseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseTextField.swift; sourceTree = "<group>"; };
 		49B226142226357800411FB6 /* BibleKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleKeyboardView.swift; sourceTree = "<group>"; };
 		49B22616222635B500411FB6 /* BibleKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibleKeyboardView.xib; sourceTree = "<group>"; };
 		49B2261C2226525600411FB6 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +164,6 @@
 				49B2260C2226350800411FB6 /* BookButton.swift */,
 				49B2260E2226351B00411FB6 /* SectionLabel.swift */,
 				49B226102226352D00411FB6 /* BibleSection.swift */,
-				49B226122226354300411FB6 /* VerseTextField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,7 +374,6 @@
 				49B226152226357800411FB6 /* BibleKeyboardView.swift in Sources */,
 				49B226112226352D00411FB6 /* BibleSection.swift in Sources */,
 				49B225F82226341800411FB6 /* AppDelegate.swift in Sources */,
-				49B226132226354300411FB6 /* VerseTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +386,6 @@
 				49B226292226562700411FB6 /* BibleKeyboardView.swift in Sources */,
 				49B2261F2226525600411FB6 /* KeyboardViewController.swift in Sources */,
 				49B2262D2226591500411FB6 /* BookButton.swift in Sources */,
-				49B2262A2226590D00411FB6 /* VerseTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

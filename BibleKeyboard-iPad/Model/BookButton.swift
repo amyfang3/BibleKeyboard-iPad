@@ -22,6 +22,8 @@ class BookButton: UIButton {
         self.layer.cornerRadius = cornerRadius
         self.setTitleColor(UIColor.darkGray, for: .highlighted)
         self.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        self.layer.borderWidth = 2.0
+        self.layer.borderColor = UIColor.clear.cgColor
     }
     
     required init?(coder aDecoder: NSCoder) {

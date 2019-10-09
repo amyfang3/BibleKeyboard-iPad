@@ -10,6 +10,7 @@ import UIKit
 
 class AppViewController: UIViewController, BibleVerseKeyboardViewDelegate {
     
+    
     @IBOutlet weak var textView: UITextView!
     
     var bibleKeyboardView: BibleKeyboardView!
@@ -25,13 +26,34 @@ class AppViewController: UIViewController, BibleVerseKeyboardViewDelegate {
         
         bibleKeyboardView.setNextKeyboardVisible(false)
         
+        // Constraints pinning bibleKeyboardView to the superview are added and activated
+        bibleKeyboardView.translatesAutoresizingMaskIntoConstraints = false
+        
         // Add the keyboard to a container view so that it's sized correctly
         textView.inputView = bibleKeyboardView
+        
+        // Constraints pinning bibleKeyboardView to the superview are added and activated
+        bibleKeyboardView.translatesAutoresizingMaskIntoConstraints = false
+        bibleKeyboardView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        //NSLayoutConstraint.activate([
+            //bibleKeyboardView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.size.width)
+//            bibleKeyboardView.leftAnchor.constraint(equalTo: UIScreen.main.bounds.),
+//            bibleKeyboardView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
+//            bibleKeyboardView.topAnchor.constraint(equalTo: inputView.topAnchor),
+//            bibleKeyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor),
+            //])
+        
+        
         
         // makes the keyboard pop up immediately
         textView.becomeFirstResponder()
         textView.autocorrectionType = .no
     }
+    
+    @IBAction func clearBtn(_ sender: Any) {
+        textView.text = ""
+    }
+    
     
     func submitButtonWasTapped(passage: String) {
         textView.insertText(passage)
