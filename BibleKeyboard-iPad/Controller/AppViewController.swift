@@ -48,6 +48,8 @@ class AppViewController: UIViewController, BibleVerseKeyboardViewDelegate {
         // makes the keyboard pop up immediately
         textView.becomeFirstResponder()
         textView.autocorrectionType = .no
+        textView.inputAssistantItem.leadingBarButtonGroups.removeAll()
+        textView.inputAssistantItem.trailingBarButtonGroups.removeAll()
     }
     
     @IBAction func clearBtn(_ sender: Any) {

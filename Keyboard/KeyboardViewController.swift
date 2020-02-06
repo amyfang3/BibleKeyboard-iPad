@@ -24,13 +24,26 @@ class KeyboardViewController: UIInputViewController {
         inputView.addSubview(bibleKeyboardView)
         
         // Constraints pinning bibleKeyboardView to the superview are added and activated
-        bibleKeyboardView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            bibleKeyboardView.leftAnchor.constraint(equalTo: inputView.leftAnchor),
-            bibleKeyboardView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
-            bibleKeyboardView.topAnchor.constraint(equalTo: inputView.topAnchor),
-            bibleKeyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor),
-            ])
+        bibleKeyboardView.translatesAutoresizingMaskIntoConstraints = true
+        
+        print(bibleKeyboardView.frame.minX)
+        print(bibleKeyboardView.frame.maxX)
+        print(bibleKeyboardView.frame.minY)
+        print(bibleKeyboardView.frame.maxY)
+        print()
+        print(inputView.frame.minX)
+        print(inputView.frame.maxX)
+        print(inputView.frame.minY)
+        print(inputView.frame.maxY)
+        
+        
+        
+//        NSLayoutConstraint.activate([
+//            bibleKeyboardView.leftAnchor.constraint(equalTo: inputView.leftAnchor),
+//            bibleKeyboardView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
+//            bibleKeyboardView.topAnchor.constraint(equalTo: inputView.topAnchor),
+//            bibleKeyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor),
+//            ])
         
         // controls visibility of the globe key
         bibleKeyboardView.setNextKeyboardVisible(needsInputModeSwitchKey)
@@ -41,12 +54,17 @@ class KeyboardViewController: UIInputViewController {
                                                        for: .allTouchEvents)
 
         bibleKeyboardView.delegate = self
+        
+        inputAssistantItem.leadingBarButtonGroups = []
+        inputAssistantItem.trailingBarButtonGroups = []
+
     }
 }
 
 extension KeyboardViewController: BibleVerseKeyboardViewDelegate {
     func submitButtonWasTapped(passage: String) {
         textDocumentProxy.insertText(passage)
+        //textDocumentProxy.autocorrectionType = .no
     }
     
     func newlineButtonWasTapped() {
